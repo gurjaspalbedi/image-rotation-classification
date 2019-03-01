@@ -62,7 +62,7 @@ We also preprocessed the data trying to normalise it, but it gave low accuracy, 
 features when we normalise the data along the columns
 
 
-4. introduce how you implement each classifier
+**How each classifier was implemented**
 
 In knn, we simply compute manhattan between our test and every training sample, sort them and extract the first k train samples that most close to our test.
 Let them vote, the most voted result is our predict result.
@@ -71,7 +71,7 @@ In the Random forest, we first implement a basic decision tree using the Gini im
 
 In Ada Boost, we implement a simple decision stump, in one approach we randomly pick pixel in an image sample and classify, in another approached we pick one from the first quadrant as explained above
 
-5. present neatly-organized tables or graphs showing classification accuracies and running times as a function of the parameters you choose.
+**Findings and Results**
 
 | Algorithm 	| Train 	| Test 	| Accuracy 	|
 |---------------	|-------	|----------------	|----------	|
@@ -79,7 +79,7 @@ In Ada Boost, we implement a simple decision stump, in one approach we randomly 
 | Random Forest 	| 20min 	| less than 1min 	| 68.93% 	|
 | AdaBoost 	| 2min 	| less than 1min 	| 55.47% 	|
 
-6. Which classiers and which parameters would you recommend to a potential client? How does performance vary depending on the training dataset size, i.e. if you use just a fraction of the training data?
+**Best Classifier and Details**
 
 For the knn, we tested the k parameter from 3 to 100, k larger than 20 doesn't increase accuracy so we pick k as 20.
 ![KNN plotting result](data/WX20181209-100624.png)
@@ -88,7 +88,7 @@ For the random forest, we tested the number of trees in 10, 100, 100, a forest t
 
 For AdaBoost when the training set was reduced to 500, we saw that the dip in accuracy wasn't too much. At 500 the accuracy was 48%, at 2000 it was around 51%, at 3000 it was again close to 50%. For 5000 training images, the accuracy shot closer to the final accuracy of the model 55%. And then it was observed that the accuracy remained constant for the data.
 
-7. Show a few sample images that were classified correctly and incorrectly. Do you see any patterns to the errors?
+**Incorrect Classification Images**
 
 We found that some photos that ​mis-classified​ by our algorithm ​was​ ​actually​ ​difficult​ ​to​ ​be identifyied ​by human beings, they can either be rahter blurry or the direction is not clear.
 
