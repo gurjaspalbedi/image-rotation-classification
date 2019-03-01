@@ -1,4 +1,4 @@
-# zg3-saadun-gbedi-a4
+# Classification of images based on their roation
 
 
 ### Usage
