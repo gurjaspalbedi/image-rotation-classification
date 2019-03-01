@@ -25,9 +25,9 @@ KNN (nearest)
 ```
 
 
-### Answer for the questions
+### Program Details
 
-1. A description of how you formulated the problem:
+**Formulation of the problem:**
 
 #### KNN
 KNN is about choose K closest elements and the most shared label, so we calculate the distance, and selected the most common label. We also need to carefully choose K, which would need some experiments.
@@ -42,7 +42,7 @@ and 100 weak classifiers.
 This was tested on the test file 4 times.  The file classified this into the 4 categories based on the final value of the
 summation of product of alphas and  the value of h(value returned by weak classifiers)
 
- 2. a brief description of how your program works:
+ **How program works**
 
 #### Adaboost
 Also Commented in the code.
@@ -50,7 +50,7 @@ For selecting a decision stump: we take a pixel from the same quadrant because w
 decision stumps and this gave us the highest value of accuracy. Our assumption as to why it works is that whenever the
 image is rotated by 90 degrees the first quadrant goes to the second.
 
- 3. A discussion of any problems, assumptions, simplifications, and/or design decisions you made
+ **Assumptions, simplifications, and/or design decisions made**
 
 
 ##### Adaboost
