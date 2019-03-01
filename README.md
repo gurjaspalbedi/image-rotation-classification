@@ -1,7 +1,7 @@
 # Classification of images based on their roation
 
 
-### Usage
+### RUN PROGRAM
 
 Adaboost
 
